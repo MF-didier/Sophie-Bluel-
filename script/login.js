@@ -64,7 +64,7 @@ function login() {
     })
 }
 
-/******Gestionnaire d'événements ******/
+/**Gestionnaire d'événements**/
 if (inputSubmit) {
   inputSubmit.addEventListener('click', (event) => {
     event.preventDefault() // Empêche le formulaire de se soumettre
