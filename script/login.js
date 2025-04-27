@@ -67,7 +67,8 @@ function login() {
 /**Gestionnaire d'événements**/
 if (inputSubmit) {
   inputSubmit.addEventListener('click', (event) => {
-    event.preventDefault() // Empêche le formulaire de se soumettre
-    login() // Appelle la fonction login lorsque le bouton est cliqué
+    event.preventDefault()
+    // Empêche le formulaire de se soumettre
+    login() 
   })
 }
