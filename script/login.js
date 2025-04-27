@@ -9,7 +9,7 @@ const inputSubmit = document.querySelector('#btn-login')
 function login() {
   console.log('lecture fonction login')
   // contacte de l'api.
-  const apiUrl = 'http://localhost:5678/api/users/login' // URL de l'API
+  const apiUrl = 'http://localhost:5678/api/users/login' 
   // Récupération de l'input "Email"
   const email = document.querySelector('#email').value
   // Récupération de l'input "Password"
@@ -38,12 +38,11 @@ function login() {
           'Les informations utilisateur/mot de passe ne sont  pas correctes'
         )
       }
-      // Demande à avoir un retour de la réponse JSON pour le traitement dans le prochain bloc then.
       return response.json()
     })
 
     .then((authUser) => {
-      //Stockage de L'ID et du token de l'utilisateur..
+      //Stockage de L'ID et du token de l'utilisateur.
       console.log('authUser', authUser)
       const userId = authUser.userId
       const authToken = authUser.token
@@ -59,7 +58,6 @@ function login() {
     })
 
     .catch((error) => {
-      //Affichage d'un message d'erreur
       alert(
         'Erreur de connexion, merci de vérifier vos identifiants de connexion.'
       )
