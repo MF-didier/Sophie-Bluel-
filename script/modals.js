@@ -86,7 +86,7 @@ export function deleteTrash() {
   })
 }
 
-// // Fonction pour la prévisualisation du projet ajouté
+// prévisualisation du projet ajouté
 export function previewPicture(event) { 
   if (event.target.files && event.target.files[0]) {
     // L'objet filereader
