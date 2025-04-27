@@ -39,7 +39,7 @@ export async function displayProjectsInModal() {
     modalThumbnailsTrash.appendChild(modalElementImg)
     modalThumbnailsTrash.appendChild(modalTrash)
 
-    // Ajout de la div "modalThumbnailsTrash" à la galerie de la modale.
+    // Ajout de la div "modalThumbnailsTrash" 
     modalProjects.appendChild(modalThumbnailsTrash)
   })
   deleteTrash()
@@ -91,7 +91,7 @@ export function previewPicture(event) {
   if (event.target.files && event.target.files[0]) {
     // L'objet filereader
     const reader = new FileReader() 
-    // Ajout d'un écouteur d'événement pour le chargement du fichier
+    // Ajout un écouteur d'événement pour le chargement du fichier
     reader.onload = function (event) { 
       imgPreview.src = event.target.result
  
@@ -133,7 +133,7 @@ export async function categoriesModales() {
     })
 }
 
-// export Fonction permettant l'ajout de projet
+// ajout de projet
 export async function addProject() {
   const elementTitle = document.querySelector('#form-title').value
   const elementCategory = document.querySelector('#categorie-select').value
@@ -189,7 +189,7 @@ export function btnValidateProject() {
 
   // Réinitialiser la couleur à chaque appel de la fonction
   btnValidate.style.backgroundColor = '#b3b3b3'
-  // Vérifier si le titre et le fichier sont remplis
+  //champ requis pour la validation
   // et si le fichier est sélectionné
   if (
     elementTitle.value !== '' &&
