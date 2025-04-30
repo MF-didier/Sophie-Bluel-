@@ -3,7 +3,7 @@
 // Récupération de l'input "Submit"
 const inputSubmit = document.querySelector('#btn-login')
 
-/****** Les Fonctions******/
+/*Fonctions*/
 
 // Gestion de la connexion
 function login() {
@@ -59,7 +59,9 @@ function login() {
 
     .catch((error) => {
       alert(
-        'Erreur de connexion, merci de vérifier vos identifiants de connexion.'
+        'mot de passe ou l\'email est incorrect. Veuillez réessayer.'
+        
+        
       )
     })
 }
