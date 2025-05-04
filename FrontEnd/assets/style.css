@@ -123,6 +123,11 @@ li a:hover {
   cursor: pointer;
 }
 
+.filters .btnFilters:focus {
+  background-color: #1d6154;
+  color: #ffffff;
+
+}
 .filters .btnFilters:hover {
   color: #ffffff;
   background-color: #1d6154;
